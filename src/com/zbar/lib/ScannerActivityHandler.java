@@ -42,6 +42,7 @@ public final class ScannerActivityHandler extends Handler {
 		// Start ourselves capturing previews and decoding.
 		CameraManager.get().startPreview();
 		restartPreviewAndDecode();
+		
 	}
 
 	@Override
@@ -58,6 +59,8 @@ public final class ScannerActivityHandler extends Handler {
 		case R.id.decode_succeeded:
 			state = State.SUCCESS;
 			activity.handleDecode((String) message.obj);
+			
+		
 			break;
 		case R.id.decode_failed:
 			state = State.PREVIEW;
