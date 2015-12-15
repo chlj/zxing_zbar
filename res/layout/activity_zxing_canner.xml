@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <com.zxing.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75.0dip"
+            android:orientation="horizontal"
+            android:weightSum="5.0" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="75.0dip"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/capture_top_hint"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75.0dip"
+                    android:gravity="bottom|center"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip"
+                    android:text="将扫描框对准二维码，即可完成扫描"
+                    android:textColor="#ffffffff"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="170.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/capture_flashlight"
+                android:layout_width="55.0dip"
+                android:layout_height="55.0dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/zxing_scan_flashlight_on"
+                android:clickable="true"
+                android:gravity="center"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">zxing_zbar_eclipse</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+  <string name="scan_code_text">二维码扫描</string>
+  
+
+    <string name="scan">扫一扫</string>
+    <string name="scan_tip">请将条码放到取景框中,即可自动扫描</string>
+    <string name="torch_on">打开闪光灯</string>
+    <string name="torch_off">关闭闪光灯</string>
+    <string name="query_by_mail_number">请输入或扫描运单号</string>
+</resources>
